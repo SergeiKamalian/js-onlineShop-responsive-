@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css/lib.css" />
+    <link rel="stylesheet" href="style.css/header.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="burger_menu">
+      <div class="content_burger">
+          <div class="menu_top_logo pointer space burger_logo">
+              <img src="./img/logo.png" alt="logo" class="logo_site">
+          </div>
+          <div class="burger_signin">
+            <i class='bx bxs-user-circle' ></i>  
+            <span>Войти</span>        
+          </div>
+          <div class="burger_menu_list">
+              <ul class="burger_list">
+                  <li class="burger_item burger_item_active"><i class='bx bxs-home' ></i>Главная</li>
+                  <li class="burger_item"><i class='bx bxs-contact'></i>Контакты</li>
+                  <li class="burger_item"><i class='bx bxs-book'></i>Каталог</li>
+                  <li class="burger_item"><i class='bx bxs-notepad'></i>Заказы</li>
+                  <li class="burger_item"><i class='bx bxs-basket'></i></i>Корзина</li>
+              </ul>
+          </div>
+          <div class="burger_lang">
+              <span class="burger_lang_item burger_lang_item_active">Рус</span>
+              <span class="burger_lang_item">Eng</span>
+              <span class="burger_lang_item">Հայ</span>
+          </div>
+      </div>
+  </div>
+  <!-- ============================ Theme Change ===================== -->
+  <button class="themeChange"><i class='bx bxs-moon'></i></button>
+    <header class="header">
+      <div class="container">
+        <!-- menu top -->
+        <div class="menu_top space">
+          <div class="menu_top_logo pointer space">
+            <img src="./img/logo.png" alt="logo" class="logo_site" />
+            <!-- <span class="logo_text">Wash'n<span>Drive</span></span> -->
+          </div>
+          <div class="menu_top_info space">
+            <nav class="menu_nav">
+              <ul class="menu_nav_list space">
+                <li class="list_item list_item_active">Главная</li>
+                <li class="list_item">Contacts</li>
+                <li class="list_item">Գարաև</li>
+                <li class="list_item">Запчасти</li>
+                <li class="list_item">Заказы</li>
+              </ul>
+            </nav>
+            <div class="menu_top_basket pointer space">
+              <div class="basket_icon">
+                <!-- <i class="fa-solid fa-alien"></i> -->
+                <i class="bx bxs-cart"></i>
+                <div class="bakset_icon_text center">5</div>
+              </div>
+            </div>
+            <!-- ================== Lang =================== -->
+            <div class="lang_div">
+              <div class="active_lang">
+                  <span class="lang">Рус</span>
+                  <i class='bx bxs-chevron-down hidden'></i>
+                  <i class='hidden bxs-chevron-up'></i>
+              </div>
+              <div class="dropDownDiv dropDown hidden">
+                  <span class="lang">Eng</span>
+                  <span class="lang">Հայ</span>
+              </div>
+          </div>
+            <div></div>
+            <div class="menu_top_user pointer space">
+              <div class="user_icon center">
+                <i class="bx bxs-user"></i>
+              </div>
+              <div class="user_text center">Войти</div>
+              
+            </div>
+            <!-- =======================Burger========================= -->
+            <label  for="check">
+              <input type="checkbox" id="check"/>
+              <span class="burger_span"></span>
+              <span class="burger_span"></span>
+              <span class="burger_span"></span>
+          </label>
+            <!-- <div class="button_burger">
+              <i class="bx bx-menu"></i>
+            </div> -->
+          </div>
+        </div>
+        <div class="menu_top_search space">
+          <input type="text" class="input_search" placeholder="Введите свой запрос..."/>
+          <button class="btn_search">Поиск</button>
+        </div>
+
+        <!-- content -->
+        <div class="content_header">
+          <div class="content_header_top space">
+            <div class="top_content_left">
+              <h1>
+                Предлагаем только качественные <span>запчасти</span> для
+                иномарок
+              </h1>
+              <!-- silder for TABLET /////////////// -->
+              <div class="prodcut_slider prodcut_slider_mobile slider_tablet">
+                <div class="product_slider_slider">
+                  <div class="btns_slider">
+                    <button class="btn_left">
+                      <i class="bx bxs-chevron-left"></i>
+                    </button>
+                    <button class="btn_right">
+                      <i class="bx bxs-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product_slider_img">
+                  <img src="img/product.png" alt="" class="img" />
+                  <img src="img/product.png" alt="" class="img" />
+                  <img src="img/product.png" alt="" class="img" />
+                </div>
+                <div class="product_slider_num">
+                  <div class="slider_nums">
+                    <span
+                      ><span class="active_num">01</span
+                      ><span class="noActive_num">/08</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- FOR MOBILE PHONE -->
+              <div class="prodcut_slider prodcut_slider_phone slider_phone">
+                <div class="product_slider_img">
+                  <img src="img/product.png" alt="" class="img" />
+                  <img src="img/product.png" alt="" class="img" />
+                  <img src="img/product.png" alt="" class="img" />
+                </div>
+                <div class="product_slider_slider">
+                  <div class="btns_slider">
+                    <button class="btn_left">
+                      <i class="bx bxs-chevron-left"></i>
+                    </button>
+                    <button class="btn_right">
+                      <i class="bx bxs-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content_left space">
+                <button class="btn_see">Посмотреть каталог</button>
+                <span class="content_left_text">Более 50 productов</span>
+              </div>
+              <div class="content_left_info space">
+                <div class="left_info_item center">
+                  <div class="info_item_icon">
+                    <i class="bx bxs-rocket"></i>
+                  </div>
+                  <span class="info_item_text">Высокое качество</span>
+                  <span class="info_item_com"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</span
+                  >
+                </div>
+                <div class="left_info_item center">
+                  <div class="info_item_icon">
+                    <i class="bx bxs-bar-chart-alt-2"></i>
+                  </div>
+                  <span class="info_item_text">Лучшие на рынке</span>
+                  <span class="info_item_com"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</span
+                  >
+                </div>
+                <div class="left_info_item center">
+                  <div class="info_item_icon">
+                    <i class="bx bxs-collection"></i>
+                  </div>
+                  <span class="info_item_text">Большой выбор</span>
+                  <span class="info_item_com"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="prodcut_slider prodcut_slider_pk slider_pc">
+              <div class="product_slider_slider">
+                <div class="btns_slider">
+                  <button class="btn_left">
+                    <i class="bx bxs-chevron-left"></i>
+                  </button>
+                  <button class="btn_right">
+                    <i class="bx bxs-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product_slider_img">
+                <img src="img/product.png" alt="" class="img" />
+                <img src="img/product.png" alt="" class="img" />
+                <img src="img/product.png" alt="" class="img" />
+              </div>
+              <div class="product_slider_num">
+                <div class="slider_nums">
+                  <span
+                    ><span class="active_num">01</span
+                    ><span class="noActive_num">/08</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about_company">
+          <div class="about_company_header">
+            <span>О компании</span>
+            <h2>О компании</h2>
+          </div>
+
+          <div class="about_company_content">
+            <div class="about_company_left">
+              <span class="content_text">
+                Компания Mannex: продажа запчастей и аксессуаров высокого
+                качества
+                <br />
+                <br />
+                Компания Mannex начала свою деятельность недавно, но уже успела
+                заслужить хорошую репутацию среди покупателей. Количество
+                положительных отзывов в адрес нашей компании от благодарных
+                клиентов растет с каждым днем. В нашем интернет-магазине вы
+                можете купить необходимые запчасти и аксессуары для своего
+                автомобиля по выгодным ценам.
+                <br />
+                <br />
+                Большой ассортимент
+                <br />
+                <br />
+                В каталоге нашего магазина вы найдете автозапчасти для Lexus,
+                Mazda или иных автомобилей. Среди широкого ассортимента
+              </span>
+              <button class="about_us_btn">Читать дальше</button>
+            </div>
+            <div class="about_company_right"></div>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <div class="about_company_header">
+            <span>Каталог</span>
+            <h2>Каталог</h2>
+          </div>
+          <div class="list_catalog">
+            <ul class="list_catalog_ul">
+              <li class="list_item list_item_active catalog_list">Шини</li>
+              <li class="list_item catalog_list">Диски</li>
+              <li class="list_item catalog_list">Аксессуары</li>
+              <li class="list_item catalog_list">Каталог ТО</li>
+              <li class="list_item catalog_list">Масла и автохимия</li>
+              <li class="list_item catalog_list">Аккумуляторы</li>
+              <li class="list_item catalog_list">Колпаки</li>
+              <li class="list_item catalog_list">Болты, гайки</li>
+            </ul>
+          </div>
+          <div class="catalog_products">
+            <div class="catalog_menu">
+              <div class="menu_item">
+                <span>Тип</span>
+                <div class="select">
+                  <span class="active_select">Летние</span>
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+              </div>
+              <div class="menu_item">
+                <span>Тип</span>
+                <div class="select">
+                  <span class="active_select">Летние</span>
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+              </div>
+              <div class="menu_item">
+                <span>Тип</span>
+                <div class="select">
+                  <span class="active_select">Летние</span>
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+              </div>
+              <div class="menu_item">
+                <span>Тип</span>
+                <div class="select">
+                  <span class="active_select">Летние</span>
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+              </div>
+              <button class="menu_btn">Подобрать</button>
+            </div>
+            <div class="catalog_cards">
+              <div class="cards">
+                <div class="card">
+                  <div class="card_img">
+                    <img
+                      src="./img/product.png"
+                      alt="tovar"
+                      class="card_img_img"
+                    />
+                  </div>
+                  <div class="card_info">
+                    <span class="card_title">Michelin</span>
+                    <span class="card_text"
+                      >Шина летняя "Primacy 3 GRNX 205/55R16 91V"</span
+                    >
+                  </div>
+                  <div class="card_buy">
+                    <span class="card_price">900p.</span>
+                    <span class="card_sum">
+                      <span class="minus"><i class="bx bx-minus"></i></span>
+                      <span class="sum">5</span>
+                      <span class="plus"><i class="bx bx-plus"></i></span>
+                    </span>
+                    <i class="bx bxs-cart"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card_img">
+                    <img
+                      src="./img/product.png"
+                      alt="tovar"
+                      class="card_img_img"
+                    />
+                  </div>
+                  <div class="card_info">
+                    <span class="card_title">Michelin</span>
+                    <span class="card_text"
+                      >Шина летняя "Primacy 3 GRNX 205/55R16 91V"</span
+                    >
+                  </div>
+                  <div class="card_buy">
+                    <span class="card_price">900p.</span>
+                    <span class="card_sum">
+                      <span class="minus"><i class="bx bx-minus"></i></span>
+                      <span class="sum">5</span>
+                      <span class="plus"><i class="bx bx-plus"></i></span>
+                    </span>
+                    <i class="bx bxs-cart"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card_img">
+                    <img
+                      src="./img/product.png"
+                      alt="tovar"
+                      class="card_img_img"
+                    />
+                  </div>
+                  <div class="card_info">
+                    <span class="card_title">Michelin</span>
+                    <span class="card_text"
+                      >Шина летняя "Primacy 3 GRNX 205/55R16 91V"</span
+                    >
+                  </div>
+                  <div class="card_buy">
+                    <span class="card_price">900p.</span>
+                    <span class="card_sum">
+                      <span class="minus"><i class="bx bx-minus"></i></span>
+                      <span class="sum">5</span>
+                      <span class="plus"><i class="bx bx-plus"></i></span>
+                    </span>
+                    <i class="bx bxs-cart"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card_img">
+                    <img
+                      src="./img/product.png"
+                      alt="tovar"
+                      class="card_img_img"
+                    />
+                  </div>
+                  <div class="card_info">
+                    <span class="card_title">Michelin</span>
+                    <span class="card_text"
+                      >Шина летняя "Primacy 3 GRNX 205/55R16 91V"</span
+                    >
+                  </div>
+                  <div class="card_buy">
+                    <span class="card_price">900p.</span>
+                    <span class="card_sum">
+                      <span class="minus"><i class="bx bx-minus"></i></span>
+                      <span class="sum">5</span>
+                      <span class="plus"><i class="bx bx-plus"></i></span>
+                    </span>
+                    <i class="bx bxs-cart"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card_img">
+                    <img
+                      src="./img/product.png"
+                      alt="tovar"
+                      class="card_img_img"
+                    />
+                  </div>
+                  <div class="card_info">
+                    <span class="card_title">Michelin</span>
+                    <span class="card_text"
+                      >Шина летняя "Primacy 3 GRNX 205/55R16 91V"</span
+                    >
+                  </div>
+                  <div class="card_buy">
+                    <span class="card_price">900p.</span>
+                    <span class="card_sum">
+                      <span class="minus"><i class="bx bx-minus"></i></span>
+                      <span class="sum">5</span>
+                      <span class="plus"><i class="bx bx-plus"></i></span>
+                    </span>
+                    <i class="bx bxs-cart"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card_img">
+                    <img
+                      src="./img/product.png"
+                      alt="tovar"
+                      class="card_img_img"
+                    />
+                  </div>
+                  <div class="card_info">
+                    <span class="card_title">Michelin</span>
+                    <span class="card_text"
+                      >Шина летняя "Primacy 3 GRNX 205/55R16 91V"</span
+                    >
+                  </div>
+                  <div class="card_buy">
+                    <span class="card_price">900p.</span>
+                    <span class="card_sum">
+                      <span class="minus"><i class="bx bx-minus"></i></span>
+                      <span class="sum">5</span>
+                      <span class="plus"><i class="bx bx-plus"></i></span>
+                    </span>
+                    <i class="bx bxs-cart"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product_navigation">
+                <button class="page_num page_active">1</button>
+                <button class="page_num">2</button>
+                <button class="page_num">3</button>
+                <button class="page_num">...</button>
+                <button class="page_num">59</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_content">
+          <div class="footer_logo">
+            <div class="menu_top_logo pointer footer_logotype">
+              <img src="./img/logo.png" alt="logo" class="logo_site" />
+              <!-- <span class="logo_text">Our<span>Logo</span></span> -->
+            </div>
+            <div class="mobile_info">
+              <i class="bx bxs-phone"></i>
+              <span
+                >8 900 203 8083 <br />
+                8 912 294 5345</span
+              >
+            </div>
+            <span class="rights">2022 © Mannex Все права защищены</span>
+            <span class="rights">Публичная оферта</span>
+          </div>
+          <div class="footer_right">
+            <div class="footer_info">
+              <span class="info_title">Основное</span>
+              <ul>
+                <li class="info_item">Главная</li>
+                <li class="info_item">О компании</li>
+                <li class="info_item">Pro-Запрос</li>
+                <li class="info_item">Гараж</li>
+                <li class="info_item">Контакты</li>
+              </ul>
+            </div>
+            <div class="footer_info">
+              <span class="info_title">Аккаунт</span>
+              <ul>
+                <li class="info_item">Корзина</li>
+                <li class="info_item">Баланс</li>
+                <li class="info_item">Мои заказы</li>
+                <li class="info_item">Запрос продавцу</li>
+                <li class="info_item">Сравнение</li>
+              </ul>
+            </div>
+            <div class="footer_info">
+              <span class="info_title">Контакты</span>
+              <ul>
+                <li class="info_item">
+                  <i class="bx bxs-envelope"></i>
+                  <span>Главная</span>
+                </li>
+                <li class="info_item">
+                  <i class="bx bxs-phone"></i>
+                  <span
+                    >8 900 203 8083 <br />
+                    8 912 294 5345</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./javascript/header.js"></script>
+    <script src="./javascript/themeChange.js"></script>
+  </body>
+</html>

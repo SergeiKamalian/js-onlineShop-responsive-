@@ -1,0 +1,44 @@
+:root {
+    /* fonts */
+    --blue: #4BA9FF;
+    --orange: linear-gradient(180deg, #FF5454 0%, #CD4848 100%);
+    --orange-text:#FF5454;
+    --orange-down: linear-gradient(180deg, #CD4848 0%, #FF5454 100%);
+    --gray: #434242;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1)
+    --bg: white;
+    --light: white;
+    --themeBg: #121212;
+    --themeShadow:0px 0px 21px 2px rgba(18,18,18,0.48);
+    --footerColor: #F5F5F5;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all .8s;
+}
+body {
+    background:var(--bg);
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+.space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_search {
+    border: none;
+    outline: none;
+    color: white;
+}
+.pointer {
+    cursor: pointer;
+}
